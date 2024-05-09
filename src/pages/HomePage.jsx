@@ -5,6 +5,10 @@ import About from '../components/About';
 
 const Home = () => {
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main className="container">
       <Profile/>
