@@ -58,7 +58,7 @@ export const ProjectsData = [
         "id": 5,
     },
     {
-        "title": "Personal dashboard chrome extension",
+        "title": "Chrome extension",
         "description": "This is a personal dashboard chrome extension that provides a user-friendly interface for displaying various information. It utilizes the Unsplash API to fetch random background images, Google API for book search functionality, OpenWeather API to display weather information based on the user's location, and the Ninjas API for fetching random jokes.",
         "github": "https://github.com/Hudamabkhoot/Personal-dashboard",
         "tools": [ "JavaScrip", "css", "html", "API", "Figma"],
