@@ -1,5 +1,3 @@
-![portfolio]()
-
 #  Personal Portfolio
 
 - This is my personal portfolio website built with React and Vite, designed to showcase my skills, projects, and experience.
