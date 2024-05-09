@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Profile from '../components/Profile';
 import Projects from '../components/Projects';
 import About from '../components/About';
