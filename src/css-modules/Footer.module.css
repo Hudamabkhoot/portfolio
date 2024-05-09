@@ -1,0 +1,35 @@
+.footerComponent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-secondary);
+    padding: 0 2em;
+    height: 80px;
+    font-size: 0.9rem;
+  }
+  
+  .footerIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--blue);
+  }
+  
+
+  .copyright {
+    font-weight: bold;
+    color: var(--dark-main);
+  }
+
+  .socialIcon {
+    width: 25px;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .footerComponent {
+      display: none;
+    }
+  }

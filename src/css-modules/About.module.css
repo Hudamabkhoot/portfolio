@@ -1,0 +1,44 @@
+.about {
+    background-color: var(--dark-secondary);
+    color: var(--dark-main);
+    padding: 0 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutContainer {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about h1 {
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+.aboutSpan {
+    border-bottom: 2px solid var(--blue);
+    color: var(--dark-main);
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    margin-bottom: 5em;
+  }
+  
+  .skill {
+    padding: 0.5rem 1rem;
+      margin-bottom: 1.5rem;
+      margin-right: 1.5rem;
+      background: rgba(153, 153, 153, 0.2);
+      border-radius: 5px;
+      font-weight: 600;
+      color: #777; 
+    }
+  
