@@ -32,6 +32,10 @@
   border-bottom: none;
 }
 
+.socialContainer:last-child .socialIcon {
+  width: 14px;
+}
+
 .scrollContainer {
   position: absolute;
   bottom: 3%;
@@ -99,4 +103,5 @@
   .socialIcon {
     width: 23px;
   }
+
 }

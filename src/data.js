@@ -10,6 +10,8 @@ import LinkedinFooter from "./assets/linkedin-footer.svg";
 import GithubFooter from "./assets/github-footer.svg";
 import LinkedinHome from "./assets/linkedin.png";
 import GithubHome from "./assets/github.png";
+import ResumeHome from "./assets/cv.svg";
+
 
 export const ProjectsData = [
     {
@@ -95,5 +97,6 @@ export const iconsFooter = [
   export const iconsHome = [
     { icon: LinkedinHome, link: 'https://www.linkedin.com/in/huda-mabkhoot/' },
     { icon: GithubHome, link: 'https://github.com/hudamabkhoot/' },
+    { icon: ResumeHome, link: 'https://drive.google.com/file/d/1N4JkapgtpzrJEQnXzi1GOpDG56JdfE4n/view' },
   ];  
 export default {ProjectsData};
