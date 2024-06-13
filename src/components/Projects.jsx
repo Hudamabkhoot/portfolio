@@ -15,12 +15,7 @@ const Projects = () => {
       <div className={styles.projectsContainer}>
         {ProjectsList.map((project, index) => (
           <ProjectItem key={index} project={project} />
-        )).slice(0,4)}
-      </div>
-      <div className={styles.projectsMore}>
-        <NavLink to="/project" className={styles.projectsMoreBtn}>
-          Check More Of My Work
-        </NavLink>
+        ))}
       </div>
     </div>
   );

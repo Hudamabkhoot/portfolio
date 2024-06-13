@@ -19,7 +19,6 @@ export default function Navbar() {
         </div>
         <div className="navbar-navLinks">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/project">Projects</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </div>
       </div>

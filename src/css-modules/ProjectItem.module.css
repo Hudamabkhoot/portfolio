@@ -7,10 +7,6 @@
     border-bottom: 1px solid var(--blue);
   }
 
-  .project:last-child {
-    border: none;
-  }
-
   .projectsContent {
     display: flex;
     flex-direction: column;
