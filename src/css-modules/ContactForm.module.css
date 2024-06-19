@@ -3,30 +3,28 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  margin: 5em 0;
-  padding: 3em 1em;
-  height: calc(100vh - 10px);
+  padding: 1em;
+  height: calc(100vh - 20px);
 }
 
 .contactSpan {
   color: var(--dark-secondary);
   text-align: center;
-  font-size: 1.25rem;
-}
-
-.contactSpan {
+  font-size: 1rem;
+  margin: 2em;
   border-bottom: 2px solid var(--blue);
 }
 
 .contactForm {
   max-width: 350px;
   width: 100%;
-  padding: 1em;
+  padding: 1.3em;
   background-color: var(--dark-secondary);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 3em;
+  margin-bottom: 5em;
 }
-
 
 .input,
 .textarea {
@@ -61,12 +59,11 @@
 @media screen and (min-width: 700px) {
  
   .contactSpan {
-  font-size: 2rem;
+  font-size: 1.5rem;
   }
 
   .contactForm {
     max-width: 500px;
-    
   }
 }
 
@@ -74,7 +71,6 @@
   .formContainer {
     flex-direction: row;
     height: 100vh;
-    margin: 3em 0;
   }
 
 }

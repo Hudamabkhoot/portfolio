@@ -56,7 +56,7 @@
     background-color: var(--blue);
   }
   
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 600px) {
     .bottomNav {
       display: none;
     }

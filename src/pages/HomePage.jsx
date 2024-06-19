@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import Profile from '../components/Profile';
 import Projects from '../components/Projects';
 import About from '../components/About';
+import { motion  } from "framer-motion";
 
 const Home = () => {
 
@@ -11,9 +12,15 @@ const Home = () => {
 
   return (
     <main className="container">
-      <Profile/>
-      <About />
-      <Projects />
+      <motion.div 
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 10}}
+        transition={{duration: 1.3}}> 
+        <Profile/>
+        <About />
+        <Projects />
+      </motion.div>
     </main>
   );
 };

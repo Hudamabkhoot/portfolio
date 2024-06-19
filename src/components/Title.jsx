@@ -1,7 +1,7 @@
 import TypeWriterEffect from 'react-typewriter-effect';
 
 
-export default function ProjectsTitle() {
+export default function Title() {
 return (
 
     <div>
@@ -11,11 +11,11 @@ return (
           color: '#FFFFFF',
           fontWeight: 500,
           fontSize: '1.5em',
+          borderBottom: '2px solid var(--blue)'
         }}
-        startDelay={900}
         cursorColor="#FFFFFF"
         text={
-          "My Projects"
+          "Let’s work together!"
         }
         TextDelay={1000}
         typeSpeed={50}

@@ -3,8 +3,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 2em 0;
-    border-bottom: 1px solid var(--blue);
+    margin-bottom: 1.5em;
+  }
+
+  .project:last-child {
+    margin-bottom: 0;
   }
 
   .projectsContent {
@@ -12,18 +15,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
     padding: 0 1em;
   }
 
   .imgContainer {
-    max-width: 500px;
     margin: 0 auto;
+    max-width: 600px;
   }
 
   .projectsImg {
     width: 100%;
     border-radius: 10px;
+    transition: transform 1s ease;
   }
   
   .title {
@@ -40,33 +44,39 @@
   }
 
   .skillsContainer {
-    max-width: 500px;
+    max-width: 100%;
   }
   
   .skills {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    margin-top: 1.5em;
   }
   
   .skill {
-    padding: 0.4rem 0.8rem;
+    padding: 0.3rem 0.6rem;
     margin-bottom: 1rem;
     margin-right: 0.8rem;
-    background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
     font-weight: 600;
-    color: #777;
+  }
+
+  .toolIcon {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
   }
   
   .projectDetails {
     display: flex;
     gap: 20px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    margin: 0;
+
   }
 
 
-  .btn {
+.btn {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
@@ -74,23 +84,36 @@
     padding: 0.8em 1em;
     font-weight: 700;
     border-radius: 5px;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
     transition: transform .3s;
-   }
+}
 
-   .btn {
-    background:var(--blue);
-    color: var(--dark-main);
-   }
-    .btn:hover {
-      transform: translateY(-3px); 
-    }
+.btn:hover {
+    transform: translateY(-2px); 
+}
     
 
-@media screen and (min-width: 600px) {
+.github {
+    width: 35px;
+}
+
+.live {
+  width: 45px;
+}
+    
+@media screen and (min-width: 1000px) {
   .project {
-    border: 1px solid var(--blue);
-    border-radius: 10px;
-    margin: 2em;
+    flex-direction: row;
+    align-items: center;
+    margin: 2em 0;
+  }
+
+
+  .imgContainer {
+    max-width: 800px;
+  }
+    
+  .projectDetails {
+    font-size: 0.7rem;
   }
 }
+

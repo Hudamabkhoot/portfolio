@@ -1,29 +1,54 @@
 .projectsContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: var(--dark-main);
-  color: var(--dark-secondary);
-  width: 100%;
-  padding: 2em 0.5em;
-  max-width: 800px;
-  margin: 0 auto;
-  }
-
-
-.projectsTitleContainer {
-  margin-top: 3em;
-  font-size: 1.1rem;
 }
 
-  
-.projectsTitleContainer span {
+.portfolio {
+  position: relative;
+  margin-bottom: 15em; 
+}
+
+.projectsSection {
+  padding: 2em;
+  margin-bottom: 2em; 
+}
+
+.progress {
+  position: sticky;
+  top: 0;
+  left: 0;
+  text-align: center;
   color: var(--dark-secondary);
-  border-bottom: 2px solid var(--blue);
+  text-shadow: 2px 3px 4px rgba(83, 119, 128, 0.9); 
+  font-size: 1.5rem;
+  z-index: 998;
+}
 
-  }
+.progressBarContainer {
+  background-color: rgba(30, 30, 30, 0.9); 
+}
 
+.progress .progressBar {
+  height: 6px;
+  background-color: var(--blue);
+}
+
+.progressTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0.8em 0;
+  background-color: rgba(30, 30, 30, 0.9); 
+}
+
+.progress h2 {
+  position: relative;
+}
+
+.titleImg {
+  width: 40px;
+  height: 40px;
+}
 
 .projectsMoreBtn {
     text-transform: uppercase;
@@ -38,10 +63,10 @@
     transition: transform .3s;
    }
 
-    .projectsMoreBtn {
-      background: var(--dark-secondary);
-      color: var(--dark-main);
-    }
+.projectsMoreBtn {
+    background: var(--dark-secondary);
+    color: var(--dark-main);
+}
 
 .projectsMore {
 display: flex;
@@ -51,13 +76,30 @@ margin-bottom: 10em;
 }
 
 
-@media screen and (min-width: 700px) {
-
-  .projectsTitleContainer {
-    font-size: 1.3rem;
+@media screen and (max-width: 600px) {
+  .progress {
+    font-size: 1.2rem;
+    flex-direction: column; 
+    align-items: center;
   }
+  .imgContainer {
+    max-width: 100%; 
+  }
+}
+
+
+@media screen and (min-width: 700px) {
 
   .projectsMoreBtn {
     font-size: 0.9rem;
+  }
+
+  .portfolio {
+    margin-bottom: 5em; 
+  }
+
+  .progressTextContainer {
+    padding: 0.7em 0;
+    font-size: 1.7rem;
   }
 } 

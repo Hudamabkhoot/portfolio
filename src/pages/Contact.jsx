@@ -1,6 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from '../css-modules/ContactForm.module.css'; // Import your CSS module
+import { motion  } from "framer-motion";
+import { toast } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
+import Title from '../components/Title'
 
 const Contact = () => {
   const form = useRef();
@@ -9,6 +13,7 @@ const Contact = () => {
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const userId = import.meta.env.VITE_EMAILJS_USER_ID;
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -21,14 +26,14 @@ const Contact = () => {
         publicKey: userId
       })
   .then(() => {
-      setStateMessage('Message sent!');
+      toast.success('Message sent!');
       setIsSubmitting(false);
       setTimeout(() => {
         setStateMessage(null);
       }, 5000); 
     }),
     (error) => {
-      setStateMessage('Something went wrong, please try again later');
+      toast.error('Something went wrong, please try again later');
       setIsSubmitting(false);
       setTimeout(() => {
         setStateMessage(null);
@@ -39,9 +44,16 @@ const Contact = () => {
   };
 
   return (
-    <div className={styles.formContainer}>  
+    <motion.div 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity: 10}}
+    transition={{duration: 1}}
+    className={styles.formContainer}>  
     <div>
-        <span className={styles.contactSpan}>Let’s work together!</span>
+        <span className={styles.contactSpan}>
+          <Title />
+        </span>
     </div>
     <form 
     onSubmit={sendEmail} 
@@ -57,9 +69,12 @@ const Contact = () => {
       <button type="submit" className={styles.submitButton} disabled={isSubmitting}>
         {isSubmitting ? 'Sending...' : 'Send'}
       </button>
-      {stateMessage && <p className={styles.message}>{stateMessage}</p>}
     </form>
-    </div>
+    <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
+    </motion.div>
   );
 };
 

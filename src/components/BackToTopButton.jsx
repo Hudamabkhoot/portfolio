@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../css-modules/BackToTopButton.module.css'; // Import CSS module
+import { motion } from 'framer-motion'; 
+import styles from '../css-modules/BackToTopButton.module.css';
 import Arrow from "../assets/arrow-up.svg";
 
 const BackToTopButton = () => {
@@ -21,14 +22,20 @@ const BackToTopButton = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' 
+      behavior: 'smooth'
     });
   };
 
   return (
-    <div className={`${styles['back-to-top-button']} ${isVisible ? styles.visible : ''}`} onClick={scrollToTop}>
-        <img src={Arrow} alt="Back to top" className={styles.BackToTop} />
-    </div>
+    <motion.div
+      className={`${styles['back-to-top-button']} ${isVisible ? styles.visible : ''}`}
+      onClick={scrollToTop}
+      initial={{ opacity: 0, scale: 0 }} 
+      animate={{ opacity: isVisible ? 1 : 0, scale: isVisible ? 1 : 0 }} 
+      transition={{ delay: 0.7 }} 
+    >
+      <img src={Arrow} alt="Back to top" className={styles.BackToTop} />
+    </motion.div>
   );
 };
 

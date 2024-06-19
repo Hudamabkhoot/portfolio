@@ -6,21 +6,17 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    border: 0.1em solid var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    opacity: 0;
     z-index: 999;
-    transition: opacity 0.3s ease;
   }
   
-  .back-to-top-button.visible {
-    opacity: 0.9;
-  }
 
   .BackToTop {
-    width: 16px;
+    width: 20px;
   }
 
 
