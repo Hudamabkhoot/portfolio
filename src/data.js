@@ -88,6 +88,6 @@ export const iconsFooter = [
   export const iconsHome = [
     { icon: LinkedinHome, link: 'https://www.linkedin.com/in/huda-mabkhoot/' },
     { icon: GithubHome, link: 'https://github.com/hudamabkhoot/' },
-    { icon: ResumeHome, link: 'https://drive.google.com/file/d/1GnnNXUOej_GrpFAfygeV86OVI4Dnu_ax/view?usp=sharing' },
+    { icon: ResumeHome, link: 'https://drive.google.com/file/d/1Wm1IGChGxUxUFfDWWw7wXOUtp_yoApz7/view?usp=sharing' },
   ];  
 export default {ProjectsData};

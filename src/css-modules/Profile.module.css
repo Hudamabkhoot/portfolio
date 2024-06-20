@@ -105,3 +105,13 @@
   }
 
 }
+
+@media screen and (max-width: 600px) {
+  .profile {
+    height: calc(100vh - 100px);
+  }
+
+  .scrollContainer {
+    padding-bottom: 3em;
+  }
+}

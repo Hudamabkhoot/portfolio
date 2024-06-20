@@ -49,8 +49,8 @@ const About = () => {
             </InView>
           ))}
         </div>
-        
       </div>
+      <div className={styles.curved}></div>
     </div>
   );
 };

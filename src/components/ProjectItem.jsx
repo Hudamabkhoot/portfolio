@@ -11,7 +11,7 @@ const ProjectItem = ({ project }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 3], [60, 200]);
+  const y = useTransform(scrollYProgress, [0, 3], [-10, 200]);
 
   return (
     <InView threshold={0.25}>
