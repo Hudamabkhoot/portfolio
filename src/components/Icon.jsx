@@ -1,10 +1,8 @@
-import React from 'react';
-
-const Icon = ({ icon, link, Container, socialIcon}) => {
+export default function Icon ({ icon, link, Container, socialIcon}) {
   return (
     <div className={Container}>
       <a href={link}>
-        <img
+          <img
           src={icon}
           alt={`${icon} icon`}
           className={socialIcon}
@@ -14,4 +12,3 @@ const Icon = ({ icon, link, Container, socialIcon}) => {
   );
 };
 
-export default Icon;

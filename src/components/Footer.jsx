@@ -1,9 +1,7 @@
-import React from 'react';
-import { iconsFooter } from '../data';
 import styles from '../css-modules/Footer.module.css';
 import Icon from './Icon';
 
-const FooterSection = () => {
+export default function Footer( {footerData} ) {
   const copyright = String.fromCodePoint(0x00A9);
   
   return (
@@ -12,7 +10,7 @@ const FooterSection = () => {
         <a>{`${copyright} 2024 Huda Mabkhoot`}</a>
       </div>
       <div className={styles.footerIcons}>
-        {iconsFooter.map((item, index) => (
+        {footerData.map((item, index) => (
           <Icon 
           key={index} 
           icon={item.icon} 
@@ -26,4 +24,3 @@ const FooterSection = () => {
   );
 };
 
-export default FooterSection;

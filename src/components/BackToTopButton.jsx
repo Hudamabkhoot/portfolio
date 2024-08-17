@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion'; 
 import styles from '../css-modules/BackToTopButton.module.css';
 import Arrow from "../assets/arrow-up.svg";
 
-const BackToTopButton = () => {
+export default function BackToTopButton () {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -39,4 +39,3 @@ const BackToTopButton = () => {
   );
 };
 
-export default BackToTopButton;

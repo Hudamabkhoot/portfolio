@@ -1,16 +1,18 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Layout from './pages/Layout';
-import Home from './pages/HomePage';
+import Layout, { loader as layoutLoader } from './pages/Layout';
+import Home, { loader as homeLoader } from './pages/HomePage';
 import Contact from './pages/Contact';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
+    loader: layoutLoader,
     children: [
       {
         index: true,
         element: <Home />,
+        loader: homeLoader
       },
       {
         path: '/contact',

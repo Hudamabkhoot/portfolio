@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import '../css-modules/BottomNavbar.css';
-import Home from '../assets/home.svg'
-import Contact from '../assets/contact.svg'
+import '../../css-modules/BottomNavbar.css';
+import Home from '../../assets/home.svg'
+import Contact from '../../assets/contact.svg'
 
 export default function BottomNavBar() {
   return (

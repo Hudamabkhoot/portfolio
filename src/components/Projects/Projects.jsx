@@ -1,11 +1,10 @@
 import React, { useRef } from 'react';
-import styles from '../css-modules/Projects.module.css';
+import styles from '../../css-modules/Projects.module.css';
 import { motion, useScroll, useSpring } from "framer-motion";
 import ProjectItem from './ProjectItem';
-import { ProjectsData } from '../data';
-import TitleImg from '../assets/projectsTitle.svg'
+import TitleImg from '../../assets/projectsTitle.svg'
 
-const Projects = () => {
+export default function Projects({ ProjectsData }) {
 
   const ref = useRef();
 
@@ -39,4 +38,3 @@ const Projects = () => {
   );
 }
 
-export default Projects;

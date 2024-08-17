@@ -4,9 +4,9 @@ import styles from '../css-modules/ContactForm.module.css'; // Import your CSS m
 import { motion  } from "framer-motion";
 import { toast } from 'react-hot-toast';
 import { Toaster } from 'react-hot-toast';
-import Title from '../components/Title'
+import Title from '../components/Title/Title'
 
-const Contact = () => {
+export default function Contact() {
   const form = useRef();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState(null);
@@ -78,4 +78,3 @@ const Contact = () => {
   );
 };
 
-export default Contact;

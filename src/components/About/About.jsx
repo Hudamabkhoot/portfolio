@@ -1,10 +1,9 @@
-import React, { useRef } from 'react';
-import styles from '../css-modules/About.module.css';
-import { skills } from '../data';
+import { useRef } from 'react';
+import styles from '../../css-modules/About.module.css';
 import { motion, useTransform, useScroll } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
 
-const About = () => {
+export default function About({ skills }) {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -26,7 +25,7 @@ const About = () => {
               className={styles.aboutTextContainer}
             >
               <p>Hi! I am Huda 👋 I'm a front end developer proficient in React, JavaScript, TypeScript and GitHub for version control.</p>
-              <p>I'm currently on the lookout for a role in front end development, ideally using the React framework. I'd especially love to work in an environment where I can make an impact quickly. If you're hiring, feel free to contact me!</p>
+              <p>I'm currently on the lookout for a role in front end development, ideally using React. I'd especially love to work in an environment where I can make an impact quickly. If you're hiring, feel free to contact me!</p>
               <p>Here are a few technologies I've been working with recently:</p>
             </motion.div>
           )}
@@ -43,7 +42,7 @@ const About = () => {
                   transition={{ duration: 0.6, delay: index * 0.2 }} // Delay each skill animation
                   className={styles.skill}
                 >
-                  {tool}
+                  {tool.title}
                 </motion.div>
               )}
             </InView>
@@ -55,4 +54,3 @@ const About = () => {
   );
 };
 
-export default About;

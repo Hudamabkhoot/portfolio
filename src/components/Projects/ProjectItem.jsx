@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 import { motion, useTransform, useScroll } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
-import styles from '../css-modules/ProjectItem.module.css';
-import Github from "../assets/github-footer.svg";
-import Live from "../assets/live.svg";
+import styles from '../../css-modules/ProjectItem.module.css';
+import Github from "../../assets/github.svg";
+import Live from "../../assets/live.svg";
 
-const ProjectItem = ({ project }) => {
+export default function ProjectItem({ project }) {
   const ref = useRef();
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -19,7 +19,7 @@ const ProjectItem = ({ project }) => {
         <motion.div className={styles.project} ref={ref} style={{ y }}>
           <div className={styles.imgContainer}>
             <img
-              src={project.image}
+              src={project.img}
               alt={project.title}
               className={styles.projectsImg}
             />
@@ -54,8 +54,7 @@ const ProjectItem = ({ project }) => {
                 {project.tools.map((tool, index) => (
                   <div className={styles.skill} key={index}>
                     <img
-                      src={tool.icon}
-                      alt={tool.name}
+                      src={tool}
                       className={styles.toolIcon}
                     />
                   </div>
@@ -69,4 +68,3 @@ const ProjectItem = ({ project }) => {
   );
 };
 
-export default ProjectItem;

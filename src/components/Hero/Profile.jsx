@@ -1,12 +1,10 @@
-import React from 'react';
 import { useLocation } from 'react-router-dom';
-import styles from '../css-modules/Profile.module.css';
-import { iconsHome } from '../data';
-import HomeTitle from "./HomeTitle";
-import Icon from './Icon'; 
+import styles from '../../css-modules/Profile.module.css';
+import HomeTitle from "../Title/HomeTitle";
+import Icon from '../Icon'; 
 
 
-const Profile = () => {
+export default function Profile( {headerData }) {
   const location = useLocation();
 
   return (
@@ -14,8 +12,9 @@ const Profile = () => {
         <div className={styles.heading}>
         {location.pathname === '/' && <HomeTitle/>}
         </div>
+      {headerData &&
       <div className={styles.socialsContainer}>
-      {iconsHome.map((item, index) => (
+      {headerData.map((item, index) => (
            <Icon 
            key={index} 
            icon={item.icon} 
@@ -24,7 +23,7 @@ const Profile = () => {
            socialIcon={styles.socialIcon}
            />
         ))}
-      </div>
+      </div>}
       <div className={styles.scrollContainer}>
         <div className={styles.mouse}></div>
       </div>
@@ -32,4 +31,3 @@ const Profile = () => {
   );
 };
 
-export default Profile;
