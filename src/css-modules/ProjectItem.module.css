@@ -1,105 +1,104 @@
 .project {
-    padding: 3em 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 1.5em;
-  }
+  padding: 3em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 1.5em;
+}
 
-  .project:last-child {
-    margin-bottom: 0;
-  }
+.project:last-child {
+  margin-bottom: 0;
+}
 
-  .projectsContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 0 1em;
-  }
+.projectsContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 1em;
+}
 
-  .imgContainer {
-    margin: 0 auto;
-    max-width: 600px;
-  }
+.imgContainer {
+  margin: 0 auto;
+  max-width: 600px;
+}
 
-  .projectsImg {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 1s ease;
-  }
-  
-  .title {
-    color: var(--dark-secondary);
-  }
+.projectsImg {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 1s ease;
+}
 
- .title, span {
-    border-bottom: 3px solid var(--blue);
-  }
-  
-  .description {
-    text-align: justify;
-    color: var(--dark-secondary);
-  }
+.title {
+  color: var(--dark-secondary);
+}
 
-  .skillsContainer {
-    max-width: 100%;
-  }
-  
-  .skills {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5em;
-  }
-  
-  .skill {
-    padding: 0.3rem 0.6rem;
-    margin-bottom: 1rem;
-    margin-right: 0.8rem;
-    border-radius: 5px;
-    font-weight: 600;
-  }
+.title,
+span {
+  border-bottom: 3px solid var(--blue);
+}
 
-  .toolIcon {
-    width: 35px;
-    height: 35px;
-    object-fit: cover;
-  }
-  
-  .projectDetails {
-    display: flex;
-    gap: 20px;
-    font-size: 0.6rem;
-    margin: 0;
+.description {
+  text-align: justify;
+  color: var(--dark-secondary);
+}
 
-  }
+.skillsContainer {
+  max-width: 100%;
+}
 
+.skills {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+.skill {
+  padding: 0.3rem 0.6rem;
+  margin-bottom: 1rem;
+  margin-right: 0.8rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.toolIcon {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.projectDetails {
+  display: flex;
+  gap: 20px;
+  font-size: 0.6rem;
+  margin: 0;
+}
 
 .btn {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    display: inline-block;
-    padding: 0.8em 1em;
-    font-weight: 700;
-    border-radius: 5px;
-    transition: transform .3s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  display: inline-block;
+  padding: 0.8em 1em;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: transform 0.3s;
 }
 
 .btn:hover {
-    transform: translateY(-2px); 
+  transform: translateY(-2px);
 }
-    
 
 .github {
-    width: 35px;
+  width: 35px;
 }
 
 .live {
   width: 45px;
 }
-    
+
 @media screen and (min-width: 1000px) {
   .project {
     flex-direction: row;
@@ -107,13 +106,19 @@
     margin: 2em 0;
   }
 
-
   .imgContainer {
     max-width: 800px;
   }
-    
+
+  .projectsContent {
+    max-width: 50%;
+  }
+
+  .skeleton {
+    max-width: 800px;
+  }
+
   .projectDetails {
     font-size: 0.7rem;
   }
 }
-

@@ -26,7 +26,7 @@ export default function About({ skills }) {
             >
               <p>Hi! I am Huda 👋 I'm a front end developer proficient in React, JavaScript, TypeScript and GitHub for version control.</p>
               <p>I'm currently on the lookout for a role in front end development, ideally using React. I'd especially love to work in an environment where I can make an impact quickly. If you're hiring, feel free to contact me!</p>
-              <p>Here are a few technologies I've been working with recently:</p>
+              <p>Here are a few technologies and skills I’ve been working with recently:</p>
             </motion.div>
           )}
         </InView>

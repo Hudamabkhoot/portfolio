@@ -8,12 +8,12 @@ return (
          <TypeWriterEffect
         textStyle={{
           fontFamily: 'monospace',
-          color: '#FFFFFF',
+          color: '#D6D7D7',
           fontWeight: 500,
           fontSize: '1.5em',
         }}
         startDelay={900}
-        cursorColor="#FFFFFF"
+        cursorColor="#D6D7D7"
         multiText={[
           "Huda Mabkhoot",
           "Frontend Developer",

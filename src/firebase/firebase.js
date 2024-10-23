@@ -5,6 +5,7 @@ import {
     getDocs,  
     query,
 } from "firebase/firestore"
+import toast from 'react-hot-toast'
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_apiKey,
