@@ -24,8 +24,8 @@ export default function About({ skills }) {
               transition={{ duration: 0.6 }}
               className={styles.aboutTextContainer}
             >
-              <p>Hi! I am Huda 👋 I'm a front end developer proficient in React, JavaScript, TypeScript and GitHub for version control.</p>
-              <p>I'm currently on the lookout for a role in front end development, ideally using React. I'd especially love to work in an environment where I can make an impact quickly. If you're hiring, feel free to contact me!</p>
+              <p>Hi! I’m Huda 👋 I’m a Front-End Developer with a passion for building intuitive, user-friendly applications using React, JavaScript, and TypeScript. With a background as a Product Owner, I’ve led teams, shaped product roadmaps, and ensured projects stay on track to meet user needs.</p>
+              <p>I’m on the lookout for a React-focused front-end role or Project Management position where I can make an impact. If you’re hiring, let’s connect!</p>
               <p>Here are a few technologies and skills I’ve been working with recently:</p>
             </motion.div>
           )}
